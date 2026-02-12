@@ -1,9 +1,8 @@
-/* Import Google Fonts for better typography */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* General Styles */
 .app {
-  max-width: 1400px; /* Increased for wider screens */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Roboto', Arial, sans-serif;
@@ -22,19 +21,19 @@ h1 {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Loading Styles (Full-Screen Spinner and Text) */
+/* Loading Styles */
 .loading {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;  /* Full viewport height */
-  width: 100vw;   /* Full viewport width */
-  position: fixed;  /* Ensures it covers the entire screen */
+  height: 100vh;  
+  width: 100vw;   
+  position: fixed; 
   top: 0;
   left: 0;
   background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
-  z-index: 9999;  /* Stays on top if needed */
+  z-index: 9999;  
 }
 
 .spinner {
@@ -97,7 +96,7 @@ h1 {
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Base: flexible */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 25px;
 }
 
@@ -173,7 +172,7 @@ h1 {
 /* Responsive Breakpoints */
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr; /* 1 column on small mobiles */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
   .app {
@@ -192,7 +191,7 @@ h1 {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
   h1 {
@@ -202,14 +201,14 @@ h1 {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .product-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
   }
 }
 
 @media (min-width: 1201px) {
   .product-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
   }
   h1 {
